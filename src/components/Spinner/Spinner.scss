@@ -1,0 +1,10 @@
+.spinner {
+    text-align: center;
+    margin-top: 5rem;
+
+    img {
+        width: 100px;
+        height: 100px;
+        animation: rotate 3s linear infinite;
+    }
+}

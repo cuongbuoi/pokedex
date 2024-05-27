@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Google Sans';
+    src: local('Google Sans'), local('GoogleSans-Regular'),
+        url('~@/assets/fonts/GoogleSans/GoogleSans-Regular.ttf');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: local('Google Sans Italic'), local('GoogleSans-Italic'),
+        url('~@/assets/fonts/GoogleSans/GoogleSans-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: local('Google Sans Bold'), local('GoogleSans-Bold'),
+        url('~@/assets/fonts/GoogleSans/GoogleSans-Bold.ttf');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: local('Google Sans Bold Italic'), local('GoogleSans-BoldItalic'),
+        url('~@/assets/fonts/GoogleSans/GoogleSans-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+$font-main: 'Google Sans', sans-serif;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-shiraz: #ba0c2f;
+$color-thunder: #262122;
+$color-shark: #212529;
+$color-supernova: #ffcb03;
+
+$font-sizes: (
+    md: 14px,
+    lg: 16px,
+    xl: 24px,
+);
+
+$grid-breakpoint: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1800px,
+);

@@ -1,0 +1,28 @@
+.logo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+}
+
+.pokemon-wrapper {
+    padding: 1rem 0 3rem 0;
+}
+
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.load-more-wrapper {
+    margin-top: 1rem;
+}
+
+.btn-load-more {
+    background-color: $color-shiraz;
+    font-weight: 600;
+    color: $color-white;
+    border-radius: 4rem;
+    padding: 0.5rem 1.5rem;
+}

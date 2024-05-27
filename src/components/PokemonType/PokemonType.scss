@@ -1,0 +1,15 @@
+.pokemon-type {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.375rem;
+    border: 3px solid $color-thunder;
+    border-radius: 5rem;
+    font-weight: 500;
+    font-size: map-get($font-sizes, md);
+    margin-right: 0.5rem;
+
+    img {
+        width: 15px;
+        margin-right: 0.25rem;
+    }
+}
