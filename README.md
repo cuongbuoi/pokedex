@@ -2,7 +2,7 @@
 
 ## Overview
 
-An simple application to look up Pokemon
+A simple application to look up Pokemon
 using [Pokemon API](https://documenter.getpostman.com/view/24788471/2s946k6Aop).
 
 Top features:

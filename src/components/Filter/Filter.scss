@@ -58,10 +58,6 @@ $filter-radius: 0.75rem;
         @media (min-width: map-get($grid-breakpoint, md)) {
             width: 50%;
         }
-
-        @media (min-width: map-get($grid-breakpoint, lg)) {
-            width: 25%;
-        }
     }
 
     &__label {

@@ -159,24 +159,29 @@ const resetCurrentItem = (): void => {
             ></Filter>
             <Spinner v-if="loading"></Spinner>
             <template v-else>
-                <div v-if="pokemons.length" class="pokemon-list">
-                    <PokemonItem
-                        v-for="pokemon in pokemons"
-                        :key="'pokemon-' + pokemon.id"
-                        :data="pokemon"
-                        @click="openModalDetail(pokemon)"
-                    ></PokemonItem>
-                </div>
-                <EmptyData v-else></EmptyData>
-                <div v-if="showLoadMore" class="load-more-wrapper text-center">
-                    <button
-                        :disabled="loadingLoadMore"
-                        class="btn-load-more"
-                        @click="loadMore"
+                <template v-if="pokemons.length">
+                    <div class="pokemon-list">
+                        <PokemonItem
+                            v-for="pokemon in pokemons"
+                            :key="'pokemon-' + pokemon.id"
+                            :data="pokemon"
+                            @click="openModalDetail(pokemon)"
+                        ></PokemonItem>
+                    </div>
+                    <div
+                        v-if="showLoadMore"
+                        class="load-more-wrapper text-center"
                     >
-                        More pokemons
-                    </button>
-                </div>
+                        <button
+                            :disabled="loadingLoadMore"
+                            class="btn-load-more"
+                            @click="loadMore"
+                        >
+                            More pokemons
+                        </button>
+                    </div>
+                </template>
+                <EmptyData v-else></EmptyData>
             </template>
         </div>
     </div>

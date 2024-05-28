@@ -88,6 +88,15 @@ button {
     margin-bottom: 1rem;
 }
 
+.modal-open {
+    overflow: hidden;
+
+    .modal {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+    }
+}
+
 @keyframes rotate {
     0% {
         -webkit-transform: rotate(0);

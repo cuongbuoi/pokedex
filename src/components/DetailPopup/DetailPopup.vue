@@ -20,20 +20,18 @@ const hideModal = () => {
 };
 
 watch(modal, (value) => {
+    const modalOpenClass = 'modal-open';
     if (value) {
-        document.body.style.overflowY = 'hidden';
+        document.body.classList.add(modalOpenClass);
     } else {
-        document.body.style.overflowY = '';
+        document.body.classList.remove(modalOpenClass);
     }
 });
 </script>
 
 <template>
-    <transition name="fade">
-        <div v-if="modal" class="modal-backdrop" @click="hideModal"></div>
-    </transition>
     <transition name="scale">
-        <div v-if="modal" class="modal">
+        <div v-if="modal" class="modal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -59,6 +57,9 @@ watch(modal, (value) => {
                 </div>
             </div>
         </div>
+    </transition>
+    <transition name="fade">
+        <div v-if="modal" class="modal-backdrop"></div>
     </transition>
 </template>
 
